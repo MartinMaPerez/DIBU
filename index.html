@@ -1,39 +1,12 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Detectar dispositivos táctiles en Javascript</title>
-    <meta charset="utf-8" />
-    <style type="text/css">
-      #canvas{background-color: #000;}
-    </style>
-    <script type="text/javascript">
-      document.addEventListener("DOMContentLoaded", iniciar, false);
-      function iniciar()
-      {
-        var canvas = document.getElementById("canvas");
-        if ("ontouchstart" in document.documentElement)
-        {
-          canvas.addEventListener("touchstart", detectar, false);
-        }
-        else
-        {
-          canvas.addEventListener("mousedown", detectar, false);
-        }
-      }
-      function detectar()
-      {
-        if ("ontouchstart" in document.documentElement)
-        {
-          alert("Es un dispositivo táctil.");
-        }
-        else
-        {
-          alert("No es un dispositivo táctil.");
-        }
-      }
-    </script>
+    <meta charset="utf-8">
+    <title>Vamos a dibujar</title>
   </head>
   <body>
-    <canvas id="canvas" width="150" height="150"></canvas>
+    <canvas id="area" width="300" height="300"></canvas>
+    <p>Empieza moviendo las teclas de direccion</p>
+  <script src="pintor.js" charset="utf-8"></script>
   </body>
 </html>
