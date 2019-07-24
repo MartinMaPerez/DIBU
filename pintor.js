@@ -14,9 +14,9 @@ var dosTeclas = {
 console.log(teclas);
 
 document.addEventListener("keydown", dibujarTeclado);
-document.addEventListener("mousedown", clickDown);
-document.addEventListener("mousemove", dibujarMouseMove);
-document.addEventListener("mouseup", clickUp);
+document.addEventListener("touchstart", clickDown);
+document.addEventListener("touchmove", dibujarMouseMove);
+document.addEventListener("touchend", clickUp);
 var d = document.getElementById("area");
 var papel = d.getContext("2d");
 var x = 150;
